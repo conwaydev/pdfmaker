@@ -47,7 +47,14 @@ function autoScroll(page) {
     });
 
     await page.addStyleTag({
-        content: '.Post h1 { padding-right: 1in; } .Post .col._span-8 .Media { display: none; }, twittertweet { page-break-before: always; } iframe, image { page-break-inside: avoid; }'
+        content: `
+.AMPSiteHeader, .AMPSiteHeader * { display: none; }
+.Post h1 { padding-right: 1in; } 
+.Post .col._span-8 .Media { display: none; }
+twittertweet { page-break-before: always; } 
+iframe, image, .Paper { page-break-inside: avoid; }
+.col + .col { margin-top: 2.222rem; }
+`
     });
 
     await autoScroll(page);
