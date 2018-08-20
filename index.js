@@ -53,7 +53,8 @@ function autoScroll(page) {
 .Post .col._span-8 .Media { display: none; }
 twittertweet { page-break-before: always; } 
 iframe, image, .Paper { page-break-inside: avoid; }
-.col + .col { margin-top: 2.222rem; }
+.Blockquote .grow-1, amp-img img { margin-top: 0 !important; }
+.col + .col, .Blockquote .col._span-8._pad-left { margin-top: .25in !important; }
 `
     });
 
