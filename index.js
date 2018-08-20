@@ -16,7 +16,7 @@ function autoScroll(page) {
     return page.evaluate(() => {
         return new Promise(resolve => {
             let totalHeight = 0;
-            const distance = 100;
+            const distance = 50;
 
             const timer = setInterval(() => {
                 var scrollHeight = document.body.scrollHeight;
